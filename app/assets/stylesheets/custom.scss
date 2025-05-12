@@ -1,5 +1,5 @@
 .navbar{
-    background-color: black !important;
+    background-color: #DDA0DD !important;
 }
 
 .nav-link{
@@ -16,13 +16,34 @@
 }
 
 #home-cont{
-    margin-top: 25px;
+    margin: auto auto;
+    margin-top: 50px;
+}
+
+#contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .jumbotron{
-    background-image: url("/assets/jumbo-img.jpg");
-    background-position: center center;
+    background-image: url(/images/jumbo-img.jpg);
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 425px;
+    height: 600px;
+}
+
+html, body{
+    height: 100%;
+}
+
+#page-content{
+    flex: 1 0 auto;
+}
+
+#sticky-footer{
+    flex-shrink: none;
 }

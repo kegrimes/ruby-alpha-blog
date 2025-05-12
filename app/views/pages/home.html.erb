@@ -1,13 +1,18 @@
-<div id='home-cont' class="container">
-    <div class="p-5 mb-4 bg-body-tertiary rounded-3 text-center">
-        <div class="jumbotron container-fluid py-5">
-            <h1 class="display-5 fw-bold">Alpha Blog</h1>
-            <p class="fs-5">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <button class="btn btn-primary btn-lg" type="button">Sign up!</button>
+<div id="page-content">
+    <div id='home-cont' class="container">
+        <div class="jumbotron p-5 mb-4 bg-body-tertiary rounded-3 text-center">
+            <div id='contents' class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Alpha Blog</h1>
+                <p class="fs-4">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <button class="btn btn-secondary btn-lg" type="button">Sign up!</button>
+            </div>
         </div>
     </div>
 </div>
 
-<%= link_to 'Articles listing', articles_path %> |
-<%= link_to 'About Page', about_path %>
+<footer id="sticky-footer" class="py-4 bg-dark text-white">
+    <div class="container text-center">
+        <small>Copyright &copy; <%= link_to "Katelyn Grimes", "https://github.com/kegrimes", class: "text-white" %></small>
+    </div>
+</footer>
